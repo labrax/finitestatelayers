@@ -63,7 +63,10 @@ void Table::print() {
 	unsigned int j, i;
 	for(j=0; j<size_y; j++) {
 		for(i=0; i<size_x; i++) {
-			std::cout << matrix[j][i] << " ";
+			if(matrix[j][i] == 1)
+				std::cout << 'X' << " ";
+			else
+				std::cout << matrix[j][i] << " ";
 		}
 		std::cout << std::endl;
 	}

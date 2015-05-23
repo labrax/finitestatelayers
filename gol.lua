@@ -1,4 +1,4 @@
--- game of life
+-- conway's game of life
 function rule(table, x, y)
 	amount = getAmount(table, 1, x, y, 1)
 	currstate = getElement(table, x, y)
